@@ -1,0 +1,4 @@
+Create the ability to view user profiles
+Create the ability to add friends, see friend lists
+Create the ability to see which users have liked or disliked which posts
+Display like/dislike count
