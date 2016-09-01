@@ -1,9 +1,181 @@
-
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates);
 // Variables
 @import "variables";
-
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/* ----- Media Queries --- */
+
+// Small screens 
+@media only screen {
+    /* Nav Bar */
+    .container-fluid {
+        .navbar-collapse {
+            border: 1px solid #b9b9b9;
+            a {
+                text-transform: uppercase;
+                text-align: center;
+            }
+            a:hover {
+                color: #ed1c24 !important;
+            }
+        }
+        .navbar-header {
+            border: 1px solid #b9b9b9;
+            button {
+                position: relative;
+                top: 8px;
+                border-color: #f7e9e9;
+                border-color: 0;
+                background-color: #f9f8f8;
+                .icon-bar {
+                    background-color: #ed1c24;
+                }
+            }
+            .navbar-brand {
+                display: inline-block;
+                height: 67px;
+                img {
+                    width: 200px;
+                }
+            }
+        }
+    }
+    /* Welcome Screen */
+    .welcome {
+        background-color: #f47176;
+        .navbar-default {
+            .navbar-nav {
+                li {
+                    a {
+                        color: #000;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+        .presentation {
+            position: relative;
+            top: 2em;
+            text-align: center;
+            div {
+             button {
+        color: #000;
+        border-color: #8e8587;
+        background-color: #fff;
+        margin: 12px;
+                text-transform: uppercase;
+        font-weight: 600;
+    }
+    button:hover,
+    button:focus,
+    button:active {
+        background-color: #ca5d61 !important;
+        border: none;
+        color: #000 !important;
+    }
+}
+            h3 {
+                color: #fff;
+                padding: 1em;
+                text-transform: uppercase;
+            }
+            .row:nth-of-type(2) {
+                padding: 1em;
+            }
+        .modal {
+            h3 {
+                color: #000;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .container {
+        .row {
+            text-align: center;
+        }
+        :nth-child(1) {
+            img {
+                height: 125px;
+            }
+        }
+    }
+}
+
+
+}
+
+/* Define mobile styles */
+@media only screen and (max-width: 40em) {}
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+
+	/* Welcome Page */
+
+	.welcome {
+		.navbar {
+			border: 0;
+			border-radius: 0;
+			a {
+				position: relative;
+				top: 16px; 
+				font-weight: 600; 
+			}
+		}
+		.container-fluid {
+			height: 90px;
+			.collapse {
+				border: 0;
+			}
+			.navbar-header {
+				border: 0;
+				img {
+					width: 300px; 
+					position: relative;
+					bottom: 16px;
+				}
+			}
+		}
+		.presentation {
+			h3 {
+				font-size: 35px;
+			}
+			button {
+				font-size: 24px;
+			}
+			.row {
+			img {
+				height: 200px; 
+			}
+			}
+		}
+	}
+
+}
+
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {}
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+// Large screens
+@media only screen and (min-width: 64.063em) {}
+
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {}
+
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+// XLarge screens
+@media only screen and (min-width: 90.063em) {}
+
+/* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {}
+
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+// XXLarge screens
+@media only screen and (min-width: 120.063em) {}
+
+/* min-width 1921px, xxlarge screens */
